@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomList {
+
+
     private List<City> cities;
 
     public CustomList() {
@@ -12,6 +14,10 @@ public class CustomList {
 
     public void addCity(City city) {
         cities.add(city);
+    }
+
+    public boolean hasCity(City city) {
+        return cities.contains(city);
     }
 
     
